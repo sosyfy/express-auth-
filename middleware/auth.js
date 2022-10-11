@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken')
 
-const auth = (req, res ,next )=>{
+const  auth = (req, res ,next )=>{
     const token = req.header("auth").replace("Bearer ", "") ||
     req.cookies.token ||
     req.body.token;

@@ -11,7 +11,7 @@ require('./config/database').connect()
 const User = require('./model/user')
 app.use(express.json());
 
-app.post('/register', async (req ,res)=>{
+app.post('/register', async  (req ,res)=>{
   try {
     const { firstName, lastName , email , password } = req.body; 
     if ( !( firstName && lastName && email && password) ) {
@@ -93,7 +93,7 @@ app.post('/login', async (req, res )=>{
     }
 })
 
-app.get("/dashboard", auth , ( req , res )=>{
+app.get("https://lighthearted-cactus-a6fa70.netlify.app/dashboard", auth , ( req , res )=>{
    res.send("dfg")
 })
 
