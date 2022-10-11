@@ -93,7 +93,7 @@ app.post('/login', async (req, res )=>{
     }
 })
 
-app.get("https://lighthearted-cactus-a6fa70.netlify.app/dashboard", auth , ( req , res )=>{
+app.get("/", ( req , res )=>{
    res.send("dfg")
 })
 
